@@ -7,9 +7,7 @@
 </head>
 <body>
     <div class="confirmation">
-             <div class="header">
-            <a href="landing_page.jsp">Home</a>
-        </div>
+        <%@ include file = "Header.jsp"%>
         <h2>Thank You for Your Submission!</h2>
         <p>Here are the details you entered:</p>
         
@@ -22,7 +20,7 @@
             <li><strong>Phone Number:</strong> <%= request.getParameter("phone") %></li>
             <li><strong>Course:</strong> <%= request.getParameter("course") %></li>
         </ul>
-         <p>We'll review your application and get back to you.</p>
+        <p>We'll review your application and get back to you.</p>
 
     </div>
 </body>

@@ -7,10 +7,10 @@
 </head>
 <body>
     <div class="card">
-                <div class="header">
-            <a href="landing_page.jsp">Home</a>
+                <%@ include file = "Header.jsp"%>
+            
         <h2>University Admission Form</h2>
-        <form action="register" method="post">
+        <form action="register" method="post" enctype="multipart/form-data">
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" required><br><br>
 
@@ -19,6 +19,15 @@
             
             <label for="age">Age:</label>
             <input type="number" id="age" name="age" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="file1">Upload your photo here</label>
+            <input type="file" id="file1" name="file1" required><br><br>
+
+            <label for="file2">Upload your Diploma here</label>
+            <input type="file" id="file2" name="file2" required><br><br>
             
             <label for="gender">Gender:</label>
             <select id="gender" name="gender" required>
